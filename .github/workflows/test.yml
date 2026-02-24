@@ -17,8 +17,8 @@ jobs:
       - name: Create backend .env file
         run: |
           echo "TOKEN=${{ secrets.AUTH }}" >> backend/.env
-          echo "SERVER1=${{ secrets.AUTH }}" >> backend/.env
-          echo "SERVER2=${{ secrets.AUTH }}" >> backend/.env
+          echo "SERVER1=${{ secrets.SERVER1 }}" >> backend/.env
+          echo "SERVER2=${{ secrets.SERVER2 }}" >> backend/.env
 
       - name: Start containers
         run: docker compose up --build -d
@@ -28,8 +28,8 @@ jobs:
           echo "Running hello test"
           curl -f http://localhost:8000/api/message
 
-      - name: Sleep for 10s
-        run: sleep 10
+      - name: Sleep for 5s
+        run: sleep 5
 
       - name: Stop containers
         if: always()
