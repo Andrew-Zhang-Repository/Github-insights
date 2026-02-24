@@ -23,14 +23,16 @@ jobs:
       - name: Start containers
         run: docker compose up --build -d
 
+
+      - name: Sleep for 5s
+        run: sleep 5
+
       - name: Run Hello 200 test
         run: |
           echo "Running hello test"
           curl -f http://localhost:8000/api/message
 
-      - name: Sleep for 5s
-        run: sleep 5
-
+    
       - name: Stop containers
         if: always()
         run: docker compose down
