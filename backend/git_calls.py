@@ -20,7 +20,7 @@ HEADERS = {
 def get_names(username):
     api_url = f"https://api.github.com/users/{username}/repos"
 
-    response = requests.get(api_url)
+    response = requests.get(api_url,headers=HEADERS)
 
     return_list = []
     if response.status_code == 200:
