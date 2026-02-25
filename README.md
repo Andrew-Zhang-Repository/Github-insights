@@ -7,7 +7,7 @@ Input your github user or another user's link into bar, press fetch for a run do
 ---
 #### App Installation
 ```bash
-Run these commands:
+# Run these commands:
 
 # RECOMMENDED for local test
 docker compose up --build
@@ -24,9 +24,9 @@ npm run dev
 
 #### Deployment Ready Code
 ```bash
-Deployment ready using docker e.g somthing like render:
+# Deployment ready using docker e.g somthing like render:
 
-add environment variables in render
+# add environment variables in render
 TOKEN=YOURGITTOKEN
 SERVER1=renderserverlink
 ```
