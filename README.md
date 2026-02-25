@@ -1,5 +1,5 @@
 --- 
-### Github-Insights [Render Link](https://github-insights-pxwk.onrender.com/)
+### Github-Insights (Link of the site (it will be a cold start sit tight) [Render Link](https://github-insights-pxwk.onrender.com/))
 
 #### Summary
 Input your github user or another user's link into bar, press fetch for a run down of all their github stats for a given year.
